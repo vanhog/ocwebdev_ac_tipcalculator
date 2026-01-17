@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-tc-dark: rgb(15, 26, 43);
+  --color-tc-light: rgb(50, 65, 85);
+}
+
+@layer components {
+  .labeltext {
+    @apply text-xs uppercase text-cyan-100 tracking-widest;
+  }
+
+  .servicetext {
+    @apply text-xs text-cyan-100;
+  }
+
+  .servicepercentage {
+    @apply text-sm font-bold text-cyan-100;
+  }
+
+  .qualitybutton {
+    @apply flex flex-col justify-center items-center h-15 border-2 border-tc-light rounded-lg;
+  }
+}

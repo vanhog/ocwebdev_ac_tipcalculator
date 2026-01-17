@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./styles/tw.css" />
+  </head>
+  <body class="bg-tc-dark">
+    <main class="flex flex-col justify-center items-center h-screen">
+      <h1 class="sr-only">Tip Calculator</h1>
+      <section
+        class="bg-cyan-950 w-90 flex flex-col justify-center items-center rounded-xl"
+      >
+        <article
+          id="heading"
+          class="bg-linear-to-r from-cyan-500 to-cyan-900 text-white text-center rounded-t-xl w-full"
+        >
+          <div class="m-6">
+            <h1 class="text-2xl font-black pb-3">Tip Calculator</h1>
+            <p class="text-xs">Share bills fairly with your friends</p>
+          </div>
+        </article>
+        <article id="calculator" class="p-6">
+          <div>
+            <label for="inAmount" class="labeltext">BILL AMOUNT</label>
+            <input
+              type="text"
+              id="inAmount"
+              class="w-full border border-blue-100 my-2 py-2 rounded-md"
+            />
+          </div>
+
+          <div>
+            <label for="inPeople" id="inPeopleLabel" class="labeltext"
+              >NUMBER OF PEOPLE</label
+            >
+            <input
+              type="text"
+              id="inPeople"
+              aria-labelledby="inPeopleLabel"
+              class="w-full border border-blue-100 my-2 py-2 rounded-md"
+            />
+          </div>
+
+          <label
+            for="service_quality"
+            id="service_quality_label"
+            class="labeltext"
+            >Service quality</label
+          >
+          <ul
+            id="service_quality"
+            class="grid grid-cols-3 justify-center my-2 gap-3"
+          >
+            <li class="qualitybutton">
+              <button type="button">
+                <img src="./tipcalculator/" alt="" />
+                <p class="servicetext">Poor</p>
+                <p class="servicepercentage">2%</p>
+              </button>
+            </li>
+            <li class="qualitybutton">
+              <button type="button">
+                <p class="servicetext">Average</p>
+                <p class="servicepercentage">10%</p>
+              </button>
+            </li>
+            <li class="qualitybutton">
+              <button type="button">
+                <p class="servicetext">Excellent</p>
+                <p class="servicepercentage">20%</p>
+              </button>
+            </li>
+          </ul>
+
+          <div
+            id="results"
+            class="bg-tc-light border border-cyan-800 rounded-lg my-5 p-4 text-white"
+          >
+            <div id="tipAmount" class="flex flex-row justify-between">
+              <div id="tipAmountDescription" class="flex flex-row">
+                <div>ico</div>
+                <div>Tip amount</div>
+              </div>
+              <div id="tipAmountAmount">0.34</div>
+            </div>
+            <div id="totalBill" class="flex flex-row justify-between">
+              <div id="totalBillDescription" class="flex flex-row">
+                <div>ico</div>
+                <div>Total bill</div>
+              </div>
+              <div id="totalBillAmount">0.34</div>
+            </div>
+            <hr class="border-[0.5px] text-cyan-900 my-3" />
+            <div id="perPerson" class="flex flex-row justify-between">
+              <div id="perPersonDescription" class="flex flex-row">
+                <div>ico</div>
+                <div>Per person</div>
+              </div>
+              <div id="perPersonAmount">0.34</div>
+            </div>
+          </div>
+          <div id="resetButton" class="my-3">
+            <button
+              type="button"
+              class="w-full border border-blue-700 text-white"
+            >
+              RESET CALCULATOR
+            </button>
+          </div>
+        </article>
+        <article id="tailing">Made with love</article>
+      </section>
+    </main>
+  </body>
+</html>
