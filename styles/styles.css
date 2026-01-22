@@ -1,24 +1,28 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-tc-dark: rgb(15, 26, 43);
-  --color-tc-light: rgb(50, 65, 85);
+  --color-tc-bg: oklch(30.2% 0.056 229.695);
+  --color-tc-dark: oklch(0.2168 0.0373 258.84);
+  --color-tc-light: oklch(0.3709 0.0398 255.77);
+  --color-tc-gradient-from: oklch(71.5% 0.143 215.221);
+  --color-tc-gradient-to: oklch(39.8% 0.07 227.392);
+  --color-tc-text: oklch(95.6% 0.045 203.388);
+  --color-tc-emphazise: oklch(71.5% 0.143 215.221);
 }
-
 @layer components {
   .labeltext {
-    @apply text-xs uppercase text-cyan-100 tracking-widest;
+    @apply text-xs uppercase text-tc-text tracking-widest;
   }
 
   .servicetext {
-    @apply text-xs text-cyan-100;
+    @apply text-xs text-tc-text;
   }
 
   .servicepercentage {
-    @apply text-sm font-bold text-cyan-100;
+    @apply text-sm font-bold text-tc-text;
   }
 
   .qualitybutton {
-    @apply p-2 flex flex-col justify-center items-center  border-2 border-tc-light rounded-lg;
+    @apply p-2 flex flex-col justify-center items-center  border-2 border-tc-light rounded-lg hover:border-2 hover:border-tc-emphazise hover:bg-tc-gradient-to;
   }
 }

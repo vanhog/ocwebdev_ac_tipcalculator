@@ -10,11 +10,11 @@
     <main class="flex flex-col justify-center items-center h-screen">
       <h1 class="sr-only">Tip Calculator</h1>
       <section
-        class="bg-cyan-950 w-90 flex flex-col justify-center items-center rounded-xl"
+        class="bg-tc-bg w-90 flex flex-col justify-center items-center rounded-xl"
       >
         <article
           id="heading"
-          class="bg-linear-to-r from-cyan-500 to-cyan-900 text-white text-center rounded-t-xl w-full"
+          class="bg-linear-to-r from-tc-gradient-from to-tc-gradient-to text-tc-text text-center rounded-t-xl w-full"
         >
           <div class="m-6">
             <h1 class="text-2xl font-black pb-3">Tip Calculator</h1>
@@ -27,7 +27,8 @@
             <input
               type="text"
               id="inAmount"
-              class="w-full border border-blue-100 my-2 py-2 rounded-md text-right text-cyan-100 font-bold"
+              class="w-full border border-tc-text my-2 py-2 rounded-md text-right text-tc-text font-bold caret-tc-text"
+              value=" "
             />
           </div>
 
@@ -39,7 +40,8 @@
               type="text"
               id="inPeople"
               aria-labelledby="inPeopleLabel"
-              class="w-full border border-blue-100 my-2 py-2 rounded-md text-right text-cyan-100 font-bold"
+              class="w-full border border-tc-text my-2 py-2 rounded-md text-right text-tc-text font-bold caret-tc-text"
+              value=" "
             />
           </div>
 
@@ -92,7 +94,7 @@
 
           <div
             id="results"
-            class="bg-tc-light border border-cyan-800 rounded-lg my-5 p-4 text-white"
+            class="bg-tc-light border border-tc-gradient-to rounded-lg my-5 p-4 text-tc-text"
           >
             <div
               id="tipAmount"
@@ -126,7 +128,7 @@
                 €<span id="totalBillValue">0.34</span>
               </div>
             </div>
-            <hr class="border-[0.5px] text-cyan-900 my-3" />
+            <hr class="border-[0.5px] text-tc-gradient-to my-3" />
             <div
               id="perPerson"
               class="flex flex-row justify-between items-center"
@@ -149,7 +151,7 @@
           <div id="resetButton" class="my-3">
             <button
               type="button"
-              class="w-full border border-blue-700 text-cyan-100 rounded-md py-3"
+              class="w-full border border-tc-text text-tc-text rounded-md py-3"
             >
               RESET CALCULATOR
             </button>
