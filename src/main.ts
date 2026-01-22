@@ -16,6 +16,7 @@ let qualityButtonAverage    = document.getElementById('qualityAverage');
 let qualityButtonExcellent  = document.getElementById('qualityExcellent');
 
 function setTip() {
+    /* TO DO: WRITE CHECK AND ERROR LOGIC */
   tipAmount!.innerText = String((billAmountValue * serviceQuality).toFixed(2));
   totalBill!.innerText = String((billAmountValue + billAmountValue * serviceQuality).toFixed(2));
   if (!(numPeopleValue > 0)) {numPeopleValue = 1}
