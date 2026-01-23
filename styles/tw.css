@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-green-300: oklch(87.1% 0.15 154.449);
     --color-cyan-800: oklch(45% 0.085 224.283);
     --spacing: 0.25rem;
@@ -220,9 +219,6 @@
   .inline {
     display: inline;
   }
-  .table {
-    display: table;
-  }
   .h-7 {
     height: calc(var(--spacing) * 7);
   }
@@ -241,14 +237,8 @@
   .w-full {
     width: 100%;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -288,10 +278,6 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-2 {
-    border-style: var(--tw-border-style);
-    border-width: 2px;
-  }
   .border-\[0\.5px\] {
     border-style: var(--tw-border-style);
     border-width: 0.5px;
@@ -305,17 +291,11 @@
   .border-tc-text {
     border-color: var(--color-tc-text);
   }
-  .bg-amber-500 {
-    background-color: var(--color-amber-500);
-  }
   .bg-tc-bg {
     background-color: var(--color-tc-bg);
   }
   .bg-tc-dark {
     background-color: var(--color-tc-dark);
-  }
-  .bg-tc-emphasize {
-    background-color: var(--color-tc-emphasize);
   }
   .bg-tc-gradient-to {
     background-color: var(--color-tc-gradient-to);
@@ -397,23 +377,8 @@
   .text-tc-text {
     color: var(--color-tc-text);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .caret-tc-text {
     caret-color: var(--color-tc-text);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-  .hover\:border-2 {
-    &:hover {
-      @media (hover: hover) {
-        border-style: var(--tw-border-style);
-        border-width: 2px;
-      }
-    }
   }
   .hover\:border-tc-emphasize {
     &:hover {
@@ -538,11 +503,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-tracking {
   syntax: "*";
   inherits: false;
@@ -566,7 +526,6 @@
       --tw-gradient-via-position: 50%;
       --tw-gradient-to-position: 100%;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-tracking: initial;
     }
   }
