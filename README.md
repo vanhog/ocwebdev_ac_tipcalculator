@@ -1,4 +1,4 @@
-# VAT Calculator
+# Tip Calculator
 
 This is a solution to the [OpenCampus WebDev Program 2025's ](https://edu.opencampus.sh/en) Tip calculator challenge.
 
